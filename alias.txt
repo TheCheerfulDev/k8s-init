@@ -1,0 +1,5 @@
+alias k=kubectl
+alias kdry="kubectl --dry-run=client -o yaml"
+complete -F __start <tab> k
+complete -F __start <tab> kdry
+echo "set ts=2 sts=2 sw=2 et" ~/.vimrc
