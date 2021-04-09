@@ -34,7 +34,7 @@ sleep 2
 echo "  Install Docker"
 sleep 3
 sudo apt-get install -y docker.io
-
+sudo systemctl enable docker.service
 echo
 echo "  Install kubeadm, kubelet, and kubectl"
 sleep 2
