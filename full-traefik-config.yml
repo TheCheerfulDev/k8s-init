@@ -75,7 +75,7 @@ metadata:
   name: secret-rb
 subjects:
 - kind: ServiceAccount
-  name: secret-access-sa
+  name: traefik-ingress-controller
 roleRef:
   kind: ClusterRole
   name: secret-access-cr
