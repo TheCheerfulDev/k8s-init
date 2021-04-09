@@ -19,9 +19,10 @@
 echo "This script is written to work with Ubuntu 18.04"
 sleep 3
 echo
-echo "Disable swap until next reboot"
+echo "Disable swap forever"
 echo
 sudo swapoff -a
+sudo sed -i 's,/swap.img,#/swap.img,g' /etc/fstab
 
 echo "Update the local node"
 sudo apt-get update && sudo apt-get upgrade -y
