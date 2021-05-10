@@ -16,8 +16,8 @@ EOF
 
 sudo sysctl --system
 
-OS=xUbuntu_18.04
-VERSION=1.21
+export OS="xUbuntu_20.04"
+export VERSION="1.21"
 
 cat <<EOF | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
 deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/$OS/ /
